@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Albert Gabriel Tapic — Photo Retoucher &amp; Visual Creative</title>
+<title>Albert Gabriel Tapic — Photographer, Retoucher &amp; Social Media Manager</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -223,7 +223,7 @@
   /* ---------- capabilities ---------- */
   .capabilities-grid{
     display:grid;
-    grid-template-columns:repeat(4, 1fr);
+    grid-template-columns:repeat(5, minmax(0, 1fr));
     gap:1px;
     background:rgba(243,237,226,0.14);
     margin-top:3rem;
@@ -525,6 +525,29 @@
     .carousel-slide:nth-child(n+4){margin-top:0;}
   }
 
+  /* ---------- social media management ---------- */
+  .social-section{padding:6.5rem 8vw; background:var(--bone-dim); color:var(--text-on-bone); border-top:1px solid rgba(28,26,23,.12);}
+  .social-intro{display:grid; grid-template-columns:1.1fr .9fr; gap:3rem; align-items:end; margin-bottom:2.8rem;}
+  .social-intro h2{font-family:var(--display); font-size:clamp(3rem,7vw,5.4rem); line-height:.9; text-transform:uppercase;}
+  .social-intro p{max-width:48ch; font-size:1rem; font-weight:300;}
+  .social-account-grid{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1px; background:rgba(28,26,23,.16);}
+  .social-account-card{display:flex; flex-direction:column; min-height:250px; padding:clamp(1.4rem,3vw,2.4rem); background:var(--bone);}
+  .social-account-card.featured{background:var(--ink); color:var(--text-on-ink);}
+  .social-account-kicker,.social-account-role{font-family:var(--mono); font-size:.68rem; letter-spacing:.1em; text-transform:uppercase;}
+  .social-account-kicker{color:var(--fuchsia);}
+  .social-account-card.featured .social-account-kicker{color:var(--gold);}
+  .social-account-card h3{font-family:var(--display); font-size:clamp(1.8rem,3vw,2.4rem); line-height:.95; text-transform:uppercase; margin:.8rem 0 .55rem;}
+  .social-account-role{opacity:.65;}
+  .social-account-focus{margin-top:auto; padding-top:1.2rem; border-top:1px solid currentColor;}
+  .social-account-focus strong{display:block; margin-bottom:.4rem; font-family:var(--mono); font-size:.62rem; letter-spacing:.12em; text-transform:uppercase; opacity:.65;}
+  .social-account-focus p{max-width:40ch; font-size:.9rem; line-height:1.5;}
+  @media (max-width:720px){
+    .social-section{padding:4rem 6vw;}
+    .social-intro{grid-template-columns:1fr; gap:1.2rem;}
+    .social-account-grid{grid-template-columns:1fr;}
+    .social-account-card{min-height:210px;}
+  }
+
   /* ---------- client proof & milestones ---------- */
   .proof-section{padding:6.5rem 8vw; background:var(--ink); color:var(--text-on-ink);}
   .proof-intro{display:grid; grid-template-columns:1.1fr .9fr; gap:3rem; align-items:end; margin-bottom:3.2rem;}
@@ -557,7 +580,7 @@
   <header class="hero">
     <div class="hero-eyebrow">Cagayan de Oro, Philippines — est. 2016</div>
     <h1>Albert Gabriel<br/>Tapic</h1>
-    <p class="hero-tagline">Photo retoucher, photographer, and graphic designer creating natural, polished visuals for beauty, portrait, food, and brand campaigns.</p>
+    <p class="hero-tagline">Photographer, retoucher, graphic designer, and social media manager creating visual stories for creative brands and communities.</p>
     <div class="marquee" style="max-width:420px;">
       <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
     </div>
@@ -601,6 +624,11 @@
         <span class="num">04</span>
         <h3>Creative Direction</h3>
         <p>Set design, shot lists, and on-set coordination end to end.</p>
+      </div>
+      <div class="capability">
+        <span class="num">05</span>
+        <h3>Social Media Management</h3>
+        <p>Instagram account management across sewing, photography, and drag.</p>
       </div>
     </div>
   </section>
@@ -674,11 +702,46 @@
     <div class="carousel-note">A five-slide edit sequence</div>
   </section>
 
+  <!-- ============ SOCIAL MEDIA MANAGEMENT ============ -->
+  <section class="social-section" id="social-media" aria-labelledby="social-title">
+    <div class="eyebrow">06 — Social Media Management</div>
+    <div class="social-intro">
+      <h2 id="social-title">Creative work.<br/>Made for the feed.</h2>
+      <p>I manage Instagram accounts across sewing, photography, and drag, and currently manage House of Drag Lords. Each account gets a clear visual focus, from process and finished work to performance and event content.</p>
+    </div>
+    <div class="social-account-grid">
+      <article class="social-account-card">
+        <div class="social-account-kicker">01 / Owned Account</div>
+        <h3>Sewing</h3>
+        <div class="social-account-role">Owner &amp; Account Manager</div>
+        <div class="social-account-focus"><strong>Content Focus</strong><p>Show finished pieces alongside the process behind them.</p></div>
+      </article>
+      <article class="social-account-card">
+        <div class="social-account-kicker">02 / Owned Account</div>
+        <h3>Photography</h3>
+        <div class="social-account-role">Owner &amp; Account Manager</div>
+        <div class="social-account-focus"><strong>Content Focus</strong><p>Curate photography, retouching, and creative projects.</p></div>
+      </article>
+      <article class="social-account-card">
+        <div class="social-account-kicker">03 / Owned Account</div>
+        <h3>Drag</h3>
+        <div class="social-account-role">Owner &amp; Account Manager</div>
+        <div class="social-account-focus"><strong>Content Focus</strong><p>Bring performance looks and event visuals into a clear visual story.</p></div>
+      </article>
+      <article class="social-account-card featured">
+        <div class="social-account-kicker">04 / Current Management</div>
+        <h3>House of Drag Lords</h3>
+        <div class="social-account-role">Current Social Media Manager</div>
+        <div class="social-account-focus"><strong>Content Focus</strong><p>Support event promotion and a cohesive drag-house identity.</p></div>
+      </article>
+    </div>
+  </section>
+
   <!-- ============ CLIENT PROOF & FEATURES ============ -->
   <section class="proof-section" id="features">
     <div class="proof-intro">
       <div>
-        <div class="eyebrow" style="color:var(--gold);">06 — Client Campaigns &amp; Features</div>
+        <div class="eyebrow" style="color:var(--gold);">07 — Client Campaigns &amp; Features</div>
         <h2>Work that travels beyond the feed.</h2>
       </div>
       <p>Selected client posts, commercial campaigns, and editorial placements featuring my photography, retouching, and visual direction.</p>
@@ -723,7 +786,7 @@
 
   <!-- ============ EXPERIENCE ============ -->
   <section class="section" id="experience">
-    <div class="eyebrow">07 — Experience</div>
+    <div class="eyebrow">08 — Experience</div>
     <div class="exp-item">
       <div>
         <div class="exp-when">Feb 2023 — June 2026</div>
@@ -882,7 +945,7 @@
 
   <!-- ============ TOOLS ============ -->
   <section class="section--ink" style="padding:5rem 8vw;">
-    <div class="eyebrow" style="color:var(--gold);">08 — Tools</div>
+    <div class="eyebrow" style="color:var(--gold);">09 — Tools</div>
     <div class="tools-row">
       <span class="tool">Adobe Lightroom</span>
       <span class="tool">Claude</span>
@@ -895,7 +958,7 @@
   <!-- ============ CONTACT ============ -->
   <section class="section contact" id="contact">
     <div>
-      <div class="eyebrow">09 — Work with me</div>
+      <div class="eyebrow">10 — Work with me</div>
       <h2>Let's<br/>make<br/>something.</h2>
     </div>
     <ul class="contact-list">
