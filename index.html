@@ -541,12 +541,24 @@
   .social-account-focus{margin-top:auto; padding-top:1.2rem; border-top:1px solid currentColor;}
   .social-account-focus strong{display:block; margin-bottom:.4rem; font-family:var(--mono); font-size:.62rem; letter-spacing:.12em; text-transform:uppercase; opacity:.65;}
   .social-account-focus p{max-width:40ch; font-size:.9rem; line-height:1.5;}
+  .social-work-heading{margin:3.4rem 0 1.3rem; font-family:var(--display); font-size:clamp(1.8rem,3vw,2.4rem); line-height:.95; text-transform:uppercase;}
+  .social-preview-grid{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem;}
+  .social-preview-card{overflow:hidden; background:var(--bone); border:1px solid rgba(28,26,23,.12);}
+  .social-preview-image-link{display:block; overflow:hidden; background:var(--ink);}
+  .social-preview-image{width:100%; aspect-ratio:4/5; object-fit:cover; object-position:top; transition:transform .25s ease;}
+  .social-preview-image-link:hover .social-preview-image{transform:scale(1.02);}
+  .social-preview-meta{display:flex; flex-direction:column; align-items:flex-start; gap:.6rem; padding:1rem 1.1rem 1.15rem;}
+  .social-preview-handle{font-family:var(--mono); font-size:.72rem; letter-spacing:.04em;}
+  .social-preview-link{color:var(--fuchsia); font-family:var(--mono); font-size:.64rem; letter-spacing:.04em; line-height:1.5; text-underline-offset:.22rem;}
+  .social-preview-link:hover{color:#86103b;}
+  @media (max-width:900px){.social-preview-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
   @media (max-width:720px){
     .social-section{padding:4rem 6vw;}
     .social-intro{grid-template-columns:1fr; gap:1.2rem;}
     .social-account-grid{grid-template-columns:1fr;}
     .social-account-card{min-height:210px;}
   }
+  @media (max-width:520px){.social-preview-grid{grid-template-columns:1fr; max-width:420px; margin-inline:auto;}}
 
   /* ---------- client proof & milestones ---------- */
   .proof-section{padding:6.5rem 8vw; background:var(--ink); color:var(--text-on-ink);}
@@ -628,7 +640,7 @@
       <div class="capability">
         <span class="num">05</span>
         <h3>Social Media Management</h3>
-        <p>Instagram account management across sewing, photography, and drag.</p>
+        <p>Instagram account management for creative projects and community events.</p>
       </div>
     </div>
   </section>
@@ -707,7 +719,7 @@
     <div class="eyebrow">06 — Social Media Management</div>
     <div class="social-intro">
       <h2 id="social-title">Creative work.<br/>Made for the feed.</h2>
-      <p>I manage Instagram accounts across sewing, photography, and drag, and currently manage House of Drag Lords. Each account gets a clear visual focus, from process and finished work to performance and event content.</p>
+      <p>I manage Instagram accounts for creative projects and community events, shaping each feed around its work and audience. My current management role is with House of Drag Lords.</p>
     </div>
     <div class="social-account-grid">
       <article class="social-account-card">
@@ -722,17 +734,41 @@
         <div class="social-account-role">Owner &amp; Account Manager</div>
         <div class="social-account-focus"><strong>Content Focus</strong><p>Curate photography, retouching, and creative projects.</p></div>
       </article>
-      <article class="social-account-card">
-        <div class="social-account-kicker">03 / Owned Account</div>
-        <h3>Drag</h3>
-        <div class="social-account-role">Owner &amp; Account Manager</div>
-        <div class="social-account-focus"><strong>Content Focus</strong><p>Bring performance looks and event visuals into a clear visual story.</p></div>
-      </article>
       <article class="social-account-card featured">
-        <div class="social-account-kicker">04 / Current Management</div>
+        <div class="social-account-kicker">03 / Current Management</div>
         <h3>House of Drag Lords</h3>
         <div class="social-account-role">Current Social Media Manager</div>
         <div class="social-account-focus"><strong>Content Focus</strong><p>Support event promotion and a cohesive drag-house identity.</p></div>
+      </article>
+    </div>
+    <h3 class="social-work-heading">Selected Instagram Work</h3>
+    <div class="social-preview-grid" aria-label="Instagram profile screenshots">
+      <article class="social-preview-card">
+        <a class="social-preview-image-link" href="https://www.instagram.com/thehouseofdraglords/" target="_blank" rel="noopener noreferrer" aria-label="Open Instagram profile @thehouseofdraglords">
+          <img class="social-preview-image" src="assets/house-of-drag-lords.jpg" alt="Instagram profile screenshot for @thehouseofdraglords" loading="lazy">
+        </a>
+        <div class="social-preview-meta">
+          <span class="social-preview-handle">@thehouseofdraglords</span>
+          <a class="social-preview-link" href="https://www.instagram.com/thehouseofdraglords/" target="_blank" rel="noopener noreferrer">Click here to view the Instagram account ↗</a>
+        </div>
+      </article>
+      <article class="social-preview-card">
+        <a class="social-preview-image-link" href="https://www.instagram.com/_tapique/" target="_blank" rel="noopener noreferrer" aria-label="Open Instagram profile @_tapique">
+          <img class="social-preview-image" src="assets/tapique-instagram.jpg" alt="Instagram profile screenshot for @_tapique" loading="lazy">
+        </a>
+        <div class="social-preview-meta">
+          <span class="social-preview-handle">@_tapique</span>
+          <a class="social-preview-link" href="https://www.instagram.com/_tapique/" target="_blank" rel="noopener noreferrer">Click here to view the Instagram account ↗</a>
+        </div>
+      </article>
+      <article class="social-preview-card">
+        <a class="social-preview-image-link" href="https://www.instagram.com/sas3.shimmers/" target="_blank" rel="noopener noreferrer" aria-label="Open Instagram profile @sas3.shimmers">
+          <img class="social-preview-image" src="assets/sas3-shimmers.jpg" alt="Instagram profile screenshot for @sas3.shimmers" loading="lazy">
+        </a>
+        <div class="social-preview-meta">
+          <span class="social-preview-handle">@sas3.shimmers</span>
+          <a class="social-preview-link" href="https://www.instagram.com/sas3.shimmers/" target="_blank" rel="noopener noreferrer">Click here to view the Instagram account ↗</a>
+        </div>
       </article>
     </div>
   </section>
